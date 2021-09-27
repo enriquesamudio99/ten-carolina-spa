@@ -519,6 +519,43 @@ p {
   }
 }
 
+.social-networks {
+  display: flex;
+}
+.social-networks__link {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-networks__link:last-of-type {
+  margin-right: 0;
+}
+.social-networks__link::before {
+  content: "";
+  padding: 1.25rem;
+  display: inline-block;
+}
+.social-networks__link[href*="https:facebook.com"]::before {
+  background-image: url(../img/icono_facebook.svg);
+}
+.social-networks__link[href*="https:twitter.com"]::before {
+  background-image: url(../img/icono_twitter.svg);
+}
+.social-networks__link[href*="https:instagram.com"]::before {
+  background-image: url(../img/icono_instagram.svg);
+}
+.social-networks__accessibility {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  display: block;
+}
+
 .text-center {
   text-align: center;
 }
