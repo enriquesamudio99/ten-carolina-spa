@@ -1,0 +1,56 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.products {
+
+    &__heading {
+        @include m.cursiveHeading;
+        margin-bottom: v.$gutter;
+    }
+
+    &__grid {
+        @include m.grid(1, 1.5rem);
+
+        @include m.sm { 
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        @include m.lg { 
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        @include m.xl { 
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+
+}
+
+.product {
+
+    &__content {
+        background-color: v.$white;
+        padding: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        color: v.$secondary;
+    }
+
+    &__description {
+        margin-bottom: 1rem;
+    }
+
+    &__price {
+        color: darken($color: v.$gray, $amount: 30);
+        font-weight: 700;
+        font-size: 2rem;
+
+        @include m.md { 
+            font-size: 2.5rem;
+        }
+    }
+
+}

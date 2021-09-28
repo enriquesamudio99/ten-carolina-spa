@@ -565,7 +565,7 @@ p {
   color: #994a6a;
   font-family: "Italianno", sans-serif;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: lowercase;
   margin-bottom: 2rem;
   margin-bottom: 2rem;
@@ -576,6 +576,7 @@ p {
   text-transform: uppercase;
   display: block;
   font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
 .welcome__text {
   font-size: 1.25rem;
@@ -589,20 +590,23 @@ p {
   }
 }
 
+.cards {
+  padding-bottom: 3.5rem;
+}
 .cards__grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: calc(2rem - 30px);
+  gap: 2px;
 }
 @media (min-width: 576px) {
   .cards__grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 }
 @media (min-width: 992px) {
   .cards__grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
   }
 }
 
@@ -633,7 +637,7 @@ p {
   color: #994a6a;
   font-family: "Italianno", sans-serif;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: lowercase;
   margin-bottom: 2rem;
 }
@@ -643,6 +647,7 @@ p {
   text-transform: uppercase;
   display: block;
   font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
 .card__link {
   background-color: #994a6a;
@@ -666,6 +671,157 @@ p {
 }
 .card__link:hover {
   background-color: #773952;
+}
+
+.schedule {
+  background-image: linear-gradient(to bottom, #174743 0%, #174743 50%, transparent 50%), url(../img/bg_horarios.jpg);
+  background-repeat: no-repeat;
+  background-position: center, bottom center;
+  background-size: cover, cover;
+  color: #ffffff;
+}
+@media (min-width: 992px) {
+  .schedule {
+    background-image: linear-gradient(to right, #174743 0%, #174743 50%, transparent 50%), url(../img/bg_horarios.jpg);
+    background-position: center, top center;
+    background-size: cover, cover;
+  }
+}
+.schedule__grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+@media (min-width: 992px) {
+  .schedule__grid {
+    grid-template-rows: unset;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+  }
+}
+.schedule__content {
+  padding: 0 0 3.5rem;
+}
+@media (min-width: 992px) {
+  .schedule__content {
+    padding: 0;
+  }
+}
+.schedule__heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.schedule__text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .schedule__text {
+    font-size: 1.125rem;
+    width: 75%;
+    margin: 0 auto 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .schedule__text {
+    width: 85%;
+  }
+}
+
+.table {
+  width: 100%;
+  border: 5px solid #994a6a;
+  text-align: center;
+  border-collapse: collapse;
+}
+.table__thead {
+  background-color: #994a6a;
+}
+.table__th {
+  padding: 1.25rem 0;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .table__th {
+    font-size: 1.25rem;
+  }
+}
+.table__tr:hover {
+  background-color: #113431;
+}
+.table__td {
+  padding: 1.25rem 0;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .table__td {
+    font-size: 1.25rem;
+  }
+}
+
+.products__heading {
+  text-align: center;
+  color: #994a6a;
+  font-family: "Italianno", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: lowercase;
+  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
+}
+.products__heading span {
+  color: #000000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+@media (min-width: 576px) {
+  .products__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .products__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .products__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.product__content {
+  background-color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.product__title {
+  color: #994a6a;
+}
+.product__description {
+  margin-bottom: 1rem;
+}
+.product__price {
+  color: #4b4b4b;
+  font-weight: 700;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .product__price {
+    font-size: 2.5rem;
+  }
 }
 
 .text-center {

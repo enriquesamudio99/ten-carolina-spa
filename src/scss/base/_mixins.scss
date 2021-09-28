@@ -63,7 +63,7 @@
     color: v.$secondary;
     font-family: v.$secondaryFont;
     line-height: 1;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: lowercase;
     margin-bottom: 2rem;
 
@@ -73,5 +73,13 @@
         text-transform: uppercase;
         display: block;
         font-family: v.$mainFont;
+        font-weight: 700;
     }
+}
+
+@mixin heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 2rem;
 }
