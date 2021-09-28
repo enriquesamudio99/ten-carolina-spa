@@ -30,12 +30,12 @@
     }
 }
 
-@mixin boton($bgColor, $textColor) {
+@mixin btn($bgColor, $textColor) {
     background-color: $bgColor;
-    padding: 2rem 2rem;
+    padding: .75rem 1.25rem;
     color: $textColor;
-    margin-top: 2rem;
-    font-size: 2.2rem;
+    margin-top: 1rem;
+    font-size: 1.25rem;
     font-weight: 400;
     display: inline-block;
     font-weight: 700;
@@ -47,7 +47,7 @@
     @include md {
         width: auto;
     }
-    &:hover {
+    &:hover { 
         background-color: darken($bgColor, 10%);
     }
 }
@@ -56,4 +56,22 @@
     display: grid;
     grid-template-columns: repeat($columns,1fr);
     gap: $gap;
+}
+
+@mixin cursiveHeading {
+    text-align: center;
+    color: v.$secondary;
+    font-family: v.$secondaryFont;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: lowercase;
+    margin-bottom: 2rem;
+
+    span {
+        color: v.$black;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: block;
+        font-family: v.$mainFont;
+    }
 }

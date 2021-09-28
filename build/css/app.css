@@ -350,6 +350,7 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
+  background-color: #f8f8f8;
   color: #000000;
   font-size: 1rem;
   line-height: 1.618;
@@ -554,6 +555,117 @@ p {
   clip: rect(0, 0, 0, 0);
   border: 0;
   display: block;
+}
+
+.welcome {
+  text-align: center;
+}
+.welcome__heading {
+  text-align: center;
+  color: #994a6a;
+  font-family: "Italianno", sans-serif;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: lowercase;
+  margin-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.welcome__heading span {
+  color: #000000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  font-family: "Lato", sans-serif;
+}
+.welcome__text {
+  font-size: 1.25rem;
+  color: #4b4b4b;
+}
+@media (min-width: 768px) {
+  .welcome__text {
+    font-size: 1.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.cards__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: calc(2rem - 30px);
+}
+@media (min-width: 576px) {
+  .cards__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .cards__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.card {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .card {
+    max-width: unset;
+  }
+}
+.card__img {
+  border: 5px solid #ffffff;
+  width: 100%;
+}
+.card__content {
+  background-color: #ffffff;
+  max-width: 90%;
+  margin: 0 auto;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  padding-top: 1rem;
+}
+.card__heading {
+  text-align: center;
+  color: #994a6a;
+  font-family: "Italianno", sans-serif;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: lowercase;
+  margin-bottom: 2rem;
+}
+.card__heading span {
+  color: #000000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  font-family: "Lato", sans-serif;
+}
+.card__link {
+  background-color: #994a6a;
+  padding: 0.75rem 1.25rem;
+  color: #ffffff;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color;
+  transition-duration: 300ms;
+  display: block;
+}
+@media (min-width: 768px) {
+  .card__link {
+    width: auto;
+  }
+}
+.card__link:hover {
+  background-color: #773952;
 }
 
 .text-center {
