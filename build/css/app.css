@@ -557,6 +557,22 @@ p {
   display: block;
 }
 
+@media (min-width: 1200px) {
+  .swiper {
+    margin-top: 3.5rem;
+  }
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
 .welcome {
   text-align: center;
 }

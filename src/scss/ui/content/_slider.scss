@@ -1,0 +1,19 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.swiper {
+    @include m.xl { 
+        margin-top: v.$gutter;
+    }
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
