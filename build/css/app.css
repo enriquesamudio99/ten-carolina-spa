@@ -557,10 +557,8 @@ p {
   display: block;
 }
 
-@media (min-width: 1200px) {
-  .swiper {
-    margin-top: 3.5rem;
-  }
+.swiper {
+  margin-top: 3.5rem;
 }
 
 .swiper-slide {
